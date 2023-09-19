@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace intersectMessage.Data.Repositories
 {
-    internal interface IIntersectMessage
+    public interface IIntersectMessage
     {
-        Task<IEnumerable<Sato>> GetAllMesage();
+        Task<IEnumerable<MessageIntersect>> GetAllMessages();
+        Task<MessageIntersect> GetDetails(int id);
+        Task<bool> InsertMessage(MessageIntersect messageIntersect);
+        Task<bool> DeleteMessage(int id);
+
     }
 }

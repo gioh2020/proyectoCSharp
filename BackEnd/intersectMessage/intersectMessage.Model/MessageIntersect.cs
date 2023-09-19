@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace intersectMessage.Model
 {
-    internal class Message
+    public class MessageIntersect
     {
+        public int MessageId { get; set; }
+        public int MessageNum { get; set; }
+        public string? Message { get; set; }
+        public string? Satelite { get; set; }
     }
 }
