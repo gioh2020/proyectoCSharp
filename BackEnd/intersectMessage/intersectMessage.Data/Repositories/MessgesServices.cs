@@ -1,4 +1,6 @@
-﻿using intersectMessage.Model;
+﻿using Dapper;
+using intersectMessage.Model;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +9,17 @@ using System.Threading.Tasks;
 
 namespace intersectMessage.Data.Repositories
 {
-    internal class MessagesIntersetServices : IIntersectMessage
+    public class MessagesIntersetServices : IIntersectMessage
     {
+        private readonly MySqlConfig _connectionString;
+        public MessagesIntersetServices(MySqlConfig connectionString) 
+        {
+            _connectionString = connectionString;
+        }
+        protected  MySqlConnection dbConnetion()
+        {
+            return new MySqlConnection(_connectionString.ConnetionString);
+        }
         public Task<bool> DeleteMessage(int id)
         {
             throw new NotImplementedException();
@@ -16,10 +27,23 @@ namespace intersectMessage.Data.Repositories
 
         public Task<IEnumerable<MessageIntersect>> GetAllMessages()
         {
-            throw new NotImplementedException();
+            var db = dbConnetion();
+            var sql = @"SELECT messageId, messageNum, satelite
+                        FROM messagesIntersect";
+            return db.QueryAsync<MessageIntersect>(sql, new { });
         }
 
         public Task<MessageIntersect> GetDetails(int id)
+        { 
+            var db = dbConnetion();
+            var sql = @"SELECT messageId, messageNum, satelite, AuditDate
+                        FROM intersectmessages
+                        WHERE id = @Id";
+     ;
+            return dbConnetion().QueryFirstOrDefaultAsync<MessageIntersect>(sql, new { MessageId = id });
+        }
+
+        public Task<object?> GetDitails(int id)
         {
             throw new NotImplementedException();
         }
