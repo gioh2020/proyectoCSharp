@@ -88,6 +88,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "intersectMessage.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "intersectMessage.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/intersectMessage.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/intersectMessage.Data.dll": {}
+        }
+      },
+      "intersectMessage.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/intersectMessage.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/intersectMessage.Model.dll": {}
+        }
       }
     }
   },
@@ -429,11 +452,23 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "intersectMessage.Data/1.0.0": {
+      "type": "project",
+      "path": "../intersectMessage.Data/intersectMessage.Data.csproj",
+      "msbuildProject": "../intersectMessage.Data/intersectMessage.Data.csproj"
+    },
+    "intersectMessage.Model/1.0.0": {
+      "type": "project",
+      "path": "../intersectMessage.Model/intersectMessage.Model.csproj",
+      "msbuildProject": "../intersectMessage.Model/intersectMessage.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "intersectMessage.Data >= 1.0.0",
+      "intersectMessage.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -462,7 +497,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Data\\intersectMessage.Data.csproj": {
+              "projectPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Data\\intersectMessage.Data.csproj"
+            },
+            "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj": {
+              "projectPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

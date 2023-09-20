@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\intersectMessage",
+    "\\intersectMessage.Data",
+    "\\intersectMessage.Data\\Repositories",
+    "\\intersectMessage.Model",
+    "\\intersectMessage\\Controllers"
+  ],
+  "SelectedNode": "\\intersectMessage\\Controllers\\MessageIntersectController.cs",
+  "PreviewInSolutionExplorer": false
+}

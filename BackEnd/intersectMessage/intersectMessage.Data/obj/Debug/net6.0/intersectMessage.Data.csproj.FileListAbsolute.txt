@@ -1,0 +1,15 @@
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\bin\Debug\net6.0\intersectMessage.Data.deps.json
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\bin\Debug\net6.0\intersectMessage.Data.dll
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\bin\Debug\net6.0\intersectMessage.Data.pdb
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\bin\Debug\net6.0\intersectMessage.Model.dll
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\bin\Debug\net6.0\intersectMessage.Model.pdb
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\intersectMessage.Data.csproj.AssemblyReference.cache
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\intersectMessage.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\intersectMessage.Data.AssemblyInfoInputs.cache
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\intersectMessage.Data.AssemblyInfo.cs
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\intersectMessage.Data.csproj.CoreCompileInputs.cache
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\intersectMessage.Data.csproj.CopyComplete
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\intersectMessage.Data.dll
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\refint\intersectMessage.Data.dll
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\intersectMessage.Data.pdb
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Data\obj\Debug\net6.0\ref\intersectMessage.Data.dll
