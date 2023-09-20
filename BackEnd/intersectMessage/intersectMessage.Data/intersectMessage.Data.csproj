@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\intersectMessage.Model\intersectMessage.Model.csproj" />
+  </ItemGroup>
+
 </Project>

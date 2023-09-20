@@ -14,6 +14,6 @@ namespace intersectMessage.Data.Repositories
         Task<MessageIntersect> GetDetails(int id);
         Task<bool> InsertMessage(MessageIntersect messageIntersect);
         Task<bool> DeleteMessage(int id);
-
+        Task<object?> GetDitails(int id);
     }
 }

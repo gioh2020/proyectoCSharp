@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "intersectMessage.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/intersectMessage.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/intersectMessage.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "intersectMessage.Model/1.0.0": {
+      "type": "project",
+      "path": "../intersectMessage.Model/intersectMessage.Model.csproj",
+      "msbuildProject": "../intersectMessage.Model/intersectMessage.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "intersectMessage.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\giova\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj": {
+              "projectPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

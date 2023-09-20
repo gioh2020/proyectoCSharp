@@ -1,0 +1,7 @@
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.csproj.AssemblyReference.cache
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.AssemblyInfoInputs.cache
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.AssemblyInfo.cs
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.csproj.CoreCompileInputs.cache
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.MvcApplicationPartsAssemblyInfo.cache
