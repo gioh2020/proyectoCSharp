@@ -1,4 +1,5 @@
-﻿using IntersectMessage.Data.Repositories;
+﻿using intersectMessage.Data.Repositories;
+using intersectMessage.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,10 +34,13 @@ namespace intersectMessage.Controllers
             {
                 return BadRequest();
             }
-            if (!MOdelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
+
+            var created = await _messageIntersect.InsertMessage(messageIntersect);
+            return Created("created", created);
         
         }
 
