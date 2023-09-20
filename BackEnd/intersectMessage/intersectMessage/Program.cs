@@ -1,3 +1,7 @@
+using intersectMessage.Data;
+using intersectMessage.Data.Repositories;
+using MySql.Data.MySqlClient;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +10,13 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var mySqlConfign = new MySqlConfig(builder.Configuration.GetConnectionString("MySqlConnection"));
+builder.Services.AddSingleton(mySqlConfign);
+
+//builder.Services.AddSingleton(new MySqlConnection(builder.Configuration.GetConnectionString("MySqlConnection")));
+
+builder.Services.AddScoped<IIntersectMessage, MessagesIntersetServices>();
 
 var app = builder.Build();
 
