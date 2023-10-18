@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj",
+      "projectUniqueName": "C:\\Users\\giova\\OneDrive\\Escritorio\\net\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj",
       "projectName": "intersectMessage.Model",
-      "projectPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj",
+      "projectPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\net\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj",
       "packagesPath": "C:\\Users\\giova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\obj\\",
+      "outputPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\net\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\giova\\AppData\\Roaming\\NuGet\\NuGet.Config",
