@@ -5,7 +5,6 @@ USE intersectmessages;
 CREATE TABLE`satelite`(
 `SateliteId` INT NOT NULL AUTO_INCREMENT, 
 `SateliteName` VARCHAR(255)  NULL,
-`Coordenadas` VARCHAR(255)  NULL,
 `Coordenadax` VARCHAR(255)  NULL,
 `Coordenaday` VARCHAR(255)  NULL,
 `AuditDate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
