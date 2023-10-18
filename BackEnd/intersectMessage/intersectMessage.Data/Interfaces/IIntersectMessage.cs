@@ -1,12 +1,8 @@
 ﻿using intersectMessage.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
-namespace intersectMessage.Data.Repositories
+
+namespace intersectMessage.Data.Interfaces
 {
     public interface IIntersectMessage
     {
@@ -15,5 +11,7 @@ namespace intersectMessage.Data.Repositories
         Task<bool> InsertMessage(MessageIntersect messageIntersect);
         Task<bool> DeleteMessage(int id);
         Task<object?> GetDitails(int id);
+        Task<bool> createSatelite(Satelite satelite);
+
     }
 }

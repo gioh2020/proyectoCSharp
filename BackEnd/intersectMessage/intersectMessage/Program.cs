@@ -1,5 +1,6 @@
 using intersectMessage.Data;
-using intersectMessage.Data.Repositories;
+using intersectMessage.Data.Interfaces;
+using intersectMessage.Data.Sevices;
 using MySql.Data.MySqlClient;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -9,3 +9,14 @@ C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMe
 C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\refint\intersectMessage.Model.dll
 C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\intersectMessage.Model.pdb
 C:\Users\giova\OneDrive\Escritorio\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\ref\intersectMessage.Model.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\bin\Debug\net6.0\intersectMessage.Model.deps.json
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\bin\Debug\net6.0\intersectMessage.Model.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\bin\Debug\net6.0\intersectMessage.Model.pdb
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\intersectMessage.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\intersectMessage.Model.AssemblyInfoInputs.cache
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\intersectMessage.Model.AssemblyInfo.cs
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\intersectMessage.Model.csproj.CoreCompileInputs.cache
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\intersectMessage.Model.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\refint\intersectMessage.Model.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\intersectMessage.Model.pdb
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage.Model\obj\Debug\net6.0\ref\intersectMessage.Model.dll

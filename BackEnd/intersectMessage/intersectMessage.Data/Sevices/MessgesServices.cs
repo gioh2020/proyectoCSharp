@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using intersectMessage.Data.Interfaces;
 using intersectMessage.Model;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI.Common;
@@ -9,16 +10,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace intersectMessage.Data.Repositories
+namespace intersectMessage.Data.Sevices
 {
     public class MessagesIntersetServices : IIntersectMessage
     {
         private readonly MySqlConfig _connectionString;
-        public MessagesIntersetServices(MySqlConfig connectionString) 
+        public MessagesIntersetServices(MySqlConfig connectionString)
         {
             _connectionString = connectionString;
         }
-        protected  MySqlConnection dbConnetion()
+        protected MySqlConnection dbConnetion()
         {
             return new MySqlConnection(_connectionString.ConnetionString);
         }
@@ -30,18 +31,18 @@ namespace intersectMessage.Data.Repositories
         public async Task<IEnumerable<MessageIntersect>> GetAllMessages()
         {
             var db = dbConnetion();
-            var sql = @"SELECT messageId, messageNum, satelite, message
+            var sql = @"SELECT messageId, messageNum, message
                         FROM messagesIntersect";
-            return await  db.QueryAsync<MessageIntersect>(sql, new { });
+            return await db.QueryAsync<MessageIntersect>(sql, new { });
         }
 
         public async Task<MessageIntersect> GetDetails(int id)
-        { 
+        {
             var db = dbConnetion();
             var sql = @"SELECT messageId, satelite, Message, AuditDate
                         FROM intersectmessages
                         WHERE id = @Id";
-     ;
+            ;
             return await db.QueryFirstOrDefaultAsync<MessageIntersect>(sql, new { MessageId = id });
         }
 
@@ -56,8 +57,13 @@ namespace intersectMessage.Data.Repositories
             var db = dbConnetion();
             var sql = @"INSERT INTO messagesIntersect(messageNum, satelite, message) 
                         VALUES(@MessageNum, @Satelite, @Message)";
-           var result = await db.ExecuteAsync(sql, new { messageIntersect.MessageNum, messageIntersect.Satelite, messageIntersect.Message });
+            var result = await db.ExecuteAsync(sql, new { messageIntersect.MessageNum, messageIntersect.Message });
             return result > 0;
+        }
+
+        public Task<bool> createSatelite(Satelite satelite)
+        {
+            throw new NotImplementedException();
         }
     }
 }
