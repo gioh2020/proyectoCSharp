@@ -1,4 +1,4 @@
-﻿using intersectMessage.Data.Repositories;
+﻿using intersectMessage.Data.Interfaces;
 using intersectMessage.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -42,6 +42,23 @@ namespace intersectMessage.Controllers
             var created = await _messageIntersect.InsertMessage(messageIntersect);
             return Created("created", created);
         
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> createSatelite([FromBody] Satelite satelite)
+        {
+            if (satelite == null)
+            {
+                return BadRequest();
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var created = await _messageIntersect.createSatelite(satelite);
+            return Created("created", created);
+
         }
 
     }
