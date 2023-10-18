@@ -11,6 +11,5 @@ namespace intersectMessage.Model
         public int MessageId { get; set; }
         public int MessageNum { get; set; }
         public string? Message { get; set; }
-        public string? Satelite { get; set; }
     }
 }

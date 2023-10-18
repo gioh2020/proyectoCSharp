@@ -1,8 +1,10 @@
 ﻿using Dapper;
 using intersectMessage.Model;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,22 +27,22 @@ namespace intersectMessage.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<MessageIntersect>> GetAllMessages()
+        public async Task<IEnumerable<MessageIntersect>> GetAllMessages()
         {
             var db = dbConnetion();
-            var sql = @"SELECT messageId, messageNum, satelite
+            var sql = @"SELECT messageId, messageNum, satelite, message
                         FROM messagesIntersect";
-            return db.QueryAsync<MessageIntersect>(sql, new { });
+            return await  db.QueryAsync<MessageIntersect>(sql, new { });
         }
 
-        public Task<MessageIntersect> GetDetails(int id)
+        public async Task<MessageIntersect> GetDetails(int id)
         { 
             var db = dbConnetion();
-            var sql = @"SELECT messageId, messageNum, satelite, AuditDate
+            var sql = @"SELECT messageId, satelite, Message, AuditDate
                         FROM intersectmessages
                         WHERE id = @Id";
      ;
-            return dbConnetion().QueryFirstOrDefaultAsync<MessageIntersect>(sql, new { MessageId = id });
+            return await db.QueryFirstOrDefaultAsync<MessageIntersect>(sql, new { MessageId = id });
         }
 
         public Task<object?> GetDitails(int id)
@@ -48,9 +50,14 @@ namespace intersectMessage.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<bool> InsertMessage(MessageIntersect messageIntersect)
+        public async Task<bool> InsertMessage(MessageIntersect messageIntersect)
+
         {
-            throw new NotImplementedException();
+            var db = dbConnetion();
+            var sql = @"INSERT INTO messagesIntersect(messageNum, satelite, message) 
+                        VALUES(@MessageNum, @Satelite, @Message)";
+           var result = await db.ExecuteAsync(sql, new { messageIntersect.MessageNum, messageIntersect.Satelite, messageIntersect.Message });
+            return result > 0;
         }
     }
 }
