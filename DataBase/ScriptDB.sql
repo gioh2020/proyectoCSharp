@@ -12,9 +12,9 @@ PRIMARY KEY (`SateliteId`) ) ENGINE = InnoDB;
 
 CREATE TABLE `messagesIntersect` (
     `MessageId` INT NOT NULL AUTO_INCREMENT,
-    `SateliteIdRef` INT,
-    `Consecutive` INT,
-    `Distance` decimal,
+    `SateliteIdRef` INT NOT NULL,
+    `Consecutive` INT NOT NULL,
+    `Distance` decimal NOT NULL,
     `Message` VARCHAR(255) NULL,
     `AuditDate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     
