@@ -3,10 +3,9 @@
     "",
     "\\intersectMessage",
     "\\intersectMessage.Data",
-    "\\intersectMessage.Data\\Repositories",
     "\\intersectMessage.Model",
     "\\intersectMessage\\Controllers"
   ],
-  "SelectedNode": "\\intersectMessage\\Controllers\\MessageIntersectController.cs",
+  "SelectedNode": "\\intersectMessage.sln",
   "PreviewInSolutionExplorer": false
 }
