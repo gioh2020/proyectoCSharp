@@ -1,4 +1,5 @@
 ﻿using intersectMessage.Data.Interfaces;
+using intersectMessage.Data.Models;
 using intersectMessage.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,14 +24,14 @@ namespace intersectMessage.Controllers
 
         }
         [HttpGet("id")]
-        public async Task<IActionResult> GetMessageIntersectDeatails(int id)
+        public async Task<IActionResult> GetMessageIntersectDeatails(int id, int messageid)
         {
-            return Ok(await _messageIntersect.GetDitails(id));
+            return Ok(await _messageIntersect.GetDetails(id, messageid));
         }
-        [HttpPost]
-        public async Task<IActionResult> createMessageInterset([FromBody] MessageIntersect messageIntersect)
+        [HttpPost()]
+        public async Task<IActionResult> createMessageInterset([FromBody] MessageIntersectAndSatelites messageIntersectAndSatelites)
         {
-            if (messageIntersect == null)
+            if (messageIntersectAndSatelites == null)
             {
                 return BadRequest();
             }
@@ -39,12 +40,12 @@ namespace intersectMessage.Controllers
                 return BadRequest();
             }
 
-            var created = await _messageIntersect.InsertMessage(messageIntersect);
+            var created = await _messageIntersect.InsertMessage(messageIntersectAndSatelites);
             return Created("created", created);
         
         }
 
-        [HttpPost]
+        [HttpPost("createSatelite")]
         public async Task<IActionResult> createSatelite([FromBody] Satelite satelite)
         {
             if (satelite == null)
