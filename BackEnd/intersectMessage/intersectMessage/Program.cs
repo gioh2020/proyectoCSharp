@@ -19,6 +19,18 @@ builder.Services.AddSingleton(mySqlConfign);
 
 builder.Services.AddScoped<IIntersectMessage, MessagesIntersetServices>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("policity", app =>
+    {
+        app.AllowAnyHeader();
+        app.AllowAnyOrigin();
+        app.AllowAnyMethod();
+
+    });
+
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,6 +41,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("policity");
 
 app.UseAuthorization();
 
