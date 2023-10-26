@@ -4,8 +4,8 @@
     {
         public int SateliteId { get; set; }
         public string SateliteName { get; set;}
-        public int Coordenadax { get; set;}
-        public int Coordenaday { get; set; }
+        public int CoordinateX{ get; set;}
+        public int CoordinateY { get; set; }
 
     }
 }

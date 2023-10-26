@@ -1,0 +1,76 @@
+
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+.pricipal-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+label{
+    color: rgb(39, 180, 65);
+    font-size: 1rem;
+    font-family: 'Star Wars', sans-serif;
+
+}
+select{
+    width: 100%;
+    border-radius: 4px;
+    border: solid rgb(39, 180, 65) 3px;
+    background-color: transparent;
+    color: gray;
+    font-size: 1.2rem;
+    font-family: 'Star Wars', sans-serif;
+
+}
+input{
+    width: 100%;
+    border-radius: 4px;
+    border: solid rgb(39, 180, 65) 3px;
+    background-color: transparent;
+    color: gray;
+    font-size: 1.2rem;
+    font-family: 'Star Wars', sans-serif;
+    font-weight: bolder;
+}
+textarea{
+    font-size: 1.2rem;
+    color: rgb(180, 205, 185);
+    background-color: transparent;
+    font-family: 'Star Wars', sans-serif;
+}
+h1{
+    color: rgb(206, 206, 164);
+    font-family: 'Star Wars', sans-serif;
+    width: 100%;
+    text-align: center;
+    
+}
+h2{
+    color: rgb(180, 205, 185);
+    font-family: 'Star Wars', sans-serif;
+    text-indent: 15px;
+}
+img{
+    height: 100vh;
+    width: 250px;
+}
+.satelites-info-container{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.satelites-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0px 40px 0px;
+}
+.satelite-div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}

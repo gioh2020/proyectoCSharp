@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProjectServiceService {
+  suscription: any;
 
   constructor(private http: HttpClient) { }
 
@@ -21,5 +22,18 @@ export class ProjectServiceService {
           
         }
       );
+  }
+  public async connectApiGet(controllerMethod: string, callback: any, showError: boolean = false) {
+    let endpoint = "https://localhost:7067/api/";
+
+    
+    this.suscription = this.http.get<any>(endpoint + controllerMethod, { observe: 'response'})
+      .subscribe(res => {
+        callback(res);
+      },
+        err => {
+          callback(err);
+        });
+
   }
 }

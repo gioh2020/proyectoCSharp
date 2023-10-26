@@ -5,8 +5,8 @@ USE intersectmessages;
 CREATE TABLE`satelite`(
 `SateliteId` INT NOT NULL AUTO_INCREMENT, 
 `SateliteName` VARCHAR(255)  NULL,
-`Coordenadax` VARCHAR(255)  NULL,
-`Coordenaday` VARCHAR(255)  NULL,
+`CoordinateX` VARCHAR(255)  NULL,
+`CoordinateY` VARCHAR(255)  NULL,
 `AuditDate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (`SateliteId`) ) ENGINE = InnoDB;
 
@@ -25,11 +25,12 @@ CREATE TABLE `messagesIntersect` (
 CREATE TABLE `decryptedMessage` (
     `decryptedMessageId` INT NOT NULL AUTO_INCREMENT,
     `Consecutive` INT,
-    `CoordenadaX` VARCHAR(255)  NULL,
-	`CoordenadaY` VARCHAR(255)  NULL,
+    `CoordinateX` DECIMAL  NULL,
+	`CoordinateY` DECIMAL  NULL,
     `Message` VARCHAR(255) NULL,
     `AuditDate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     
-    PRIMARY KEY (`decryptedMessageId`),UNIQUE(MessageId)
+    PRIMARY KEY (`decryptedMessageId`),UNIQUE(`Consecutive`)
   
 ) ENGINE = InnoDB;
+
