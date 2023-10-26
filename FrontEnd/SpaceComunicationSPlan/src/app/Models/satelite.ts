@@ -1,15 +1,15 @@
 export interface satelite {
     sateliteId: number,
     sateliteName: string,
-    coordenadax: number,
-    coordenaday: number,
+    coordinateX: number,
+    coordinateY: number,
 
 }
 
 export interface MessageEncrypt {
     sateliteIdRef: number; 
     distance: number; 
-    message: string; 
+    messageEncrypted: string; 
 }
 
 export interface sendData {

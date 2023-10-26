@@ -49,7 +49,7 @@ export class AppComponent {
       const messageEncrypt: MessageEncrypt = {
         sateliteIdRef: satelite.sateliteId,
         distance: this.distances[index],
-        message: this.messagesEncrypt[index],
+        messageEncrypted: this.messagesEncrypt[index],
       }
       data.messages[index] = messageEncrypt
     });
@@ -73,15 +73,15 @@ export class AppComponent {
     for (let i = 0; i < palabras.length; i++) {
 
       if (count1 < palabras.length) {
-        this.messagesEncrypt[0][count1] = '';
+        this.messagesEncrypt[0][count1] = ' ';
         count1 = count1 + 3
       }
       if (count2 < palabras.length) {
-        this.messagesEncrypt[1][count2] = '';
+        this.messagesEncrypt[1][count2] = ' ';
         count2 = count2 + 2
       }
       if (count3 < palabras.length) {
-        this.messagesEncrypt[2][count3] = '';
+        this.messagesEncrypt[2][count3] = ' ';
         count3 = count3 + 2
       }
     }
