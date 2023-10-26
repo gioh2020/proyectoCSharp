@@ -9,6 +9,7 @@ namespace intersectMessage.Data.Interfaces
     {
         Task<IEnumerable<MessageIntersect>> GetAllMessages();
         Task<IEnumerable<Satelite>> GetAllSatelites();
+        Task<IEnumerable<DecryptedMessage>> GetAllMessagesIntersected();
         Task<object> GetDetails(int id, int messageId);
         Task<object> InsertMessage(MessageIntersectAndSatelites messageIntersectAndSatelites);
         Task<bool> DeleteMessage(int id);

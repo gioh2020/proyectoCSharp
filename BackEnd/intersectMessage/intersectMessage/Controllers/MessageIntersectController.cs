@@ -27,6 +27,11 @@ namespace intersectMessage.Controllers
         public async Task<IActionResult> GetAllSatelite()
         {
             return Ok(await _messageIntersect.GetAllSatelites());
+        }
+        [HttpGet("getAllMessagesIntersected")]
+        public async Task<IActionResult> GetAllMessagesIntersected()
+        {
+            return Ok(await _messageIntersect.GetAllMessagesIntersected());
 
         }
         [HttpGet("id")]
