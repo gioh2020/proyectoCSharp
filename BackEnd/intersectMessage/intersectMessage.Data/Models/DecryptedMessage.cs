@@ -10,9 +10,9 @@ namespace intersectMessage.Data.Models
     {
         public int DecryptedMessageId { get; set; }
         public string Message { get; set; }
-        public int CoordenadaX{ get; set; }
-        public int CoordenadaY { get; set; }
-        public int? consecutive { get; set; }
+        public int CoordinateX { get; set; }
+        public float CoordinateY { get; set; }
+        public float? consecutive { get; set; }
 
     }
 }
