@@ -12,6 +12,7 @@ label{
     color: rgb(39, 180, 65);
     font-size: 1rem;
     font-family: 'Star Wars', sans-serif;
+    margin-bottom: 3px;
 
 }
 select{
@@ -24,6 +25,28 @@ select{
     font-family: 'Star Wars', sans-serif;
 
 }
+th{
+    color: rgb(39, 180, 65);
+}
+td{
+    color: rgb(180, 205, 185);
+    margin-left: 51px;
+    
+}
+tr{
+    display: flex;
+    flex-direction: column;
+}
+h3{
+   color:  rgb(206, 206, 164);
+}
+h4{
+    color: rgb(39, 180, 65);
+}
+.format-info p{
+   color: rgb(39, 180, 65);
+   margin: 0px 0px 0px 25px;
+}
 input{
     width: 100%;
     border-radius: 4px;
@@ -35,10 +58,13 @@ input{
     font-weight: bolder;
 }
 textarea{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgb(180, 205, 185);
     background-color: transparent;
     font-family: 'Star Wars', sans-serif;
+    padding: 5px;
+    margin: 6px 0px 10px 0px;
+    width: 100%;
 }
 h1{
     color: rgb(206, 206, 164);
@@ -56,8 +82,9 @@ img{
     height: 100vh;
     width: 250px;
 }
+
 .satelites-info-container{
-    padding: 5px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -73,4 +100,30 @@ img{
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+.distace-info{
+    margin-top: 15px;
+}
+.format-info{
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px ;
+    border: solid rgb(206, 206, 164) 3px;
+    display: flex;
+    flex-direction: column;
+}
+.close-popUp{
+    height: 30px;
+    background-color: transparent;
+    color: rgb(39, 180, 65);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+.close-popUp:hover{
+    font-size: 23px;
 }

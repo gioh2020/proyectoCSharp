@@ -12,11 +12,11 @@
               {{satelite.sateliteName}}</option>
           </select>
         </div>
-        <div *ngIf="this.satelitesSelected[0]">
+        <div class="distace-info" *ngIf="this.satelitesSelected[0]">
           <label for="">Distancia</label>
           <input type="number" (change)="distanceChange(0,$event)">
         </div>
-    
+
       </div>
       <div class="satelite-div">
         <div>
@@ -27,11 +27,11 @@
               {{satelite.sateliteName}}</option>
           </select>
         </div>
-        <div *ngIf="this.satelitesSelected[1]">
+        <div class="distace-info" *ngIf="this.satelitesSelected[1]">
           <label for="">Distancia</label>
           <input type="number" (change)="distanceChange(1,$event)">
         </div>
-    
+
       </div>
       <div class="satelite-div">
         <div>
@@ -42,24 +42,49 @@
               {{satelite.sateliteName}}</option>
           </select>
         </div>
-        <div *ngIf="this.satelitesSelected[2]">
+        <div class="distace-info" *ngIf="this.satelitesSelected[2]">
           <label for="">Distancia</label>
           <input type="number" (change)="distanceChange(2,$event)">
         </div>
-    
+
       </div>
     </div>
-  
-  
+
+
     <div>
       <label for="">Escribir Mensaje</label>
-      
-      <textarea name="" id="" cols="80" rows="10"(change)="encryptMessage($event)"></textarea>
+
+      <textarea name="" id="" cols="80" rows="10" (change)="encryptMessage($event)"></textarea>
     </div>
-    
+
     <button (click)="saveData()">sabe</button>
-  
+
+    <div class="format-info" *ngIf="this.popUp">
+      <button class="close-popUp">X</button>
+      <h3>informacion</h3>
+     
+      <h4>"satelites": [</h4>
+      <table>
+
+
+        <tr *ngFor="let message of data?.messages; let i = index">
+          <p>&lbrace;</p>
+          <td>"Distance": "{{ message.distance }}"</td>
+          <td>"name": "{{ data.satelites[i].sateliteName}}"</td>
+          <td>"message": ["{{ message.messageEncrypted.join(' "," ') }}"]</td>
+          <p>&rbrace;,</p>
+        </tr>
+      </table>
+      <h4>]</h4>
+      <h3>informacion de satelites</h3>
+      <table>
+        <tr *ngFor="let satellite of data?.satelites; let i = index">
+          <td>{{ satellite.sateliteName }}: [{{ satellite.coordinateX }},{{ satellite.coordinateY }}]</td>
+        </tr>
+      </table>
+    </div>
   </div>
   <img src="../assets/starsDark.jpg" alt="">
-  
+
+
 </div>

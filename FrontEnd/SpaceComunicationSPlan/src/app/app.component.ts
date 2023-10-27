@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ProjectServiceService } from './Services/project-service.service';
 import { satelite, MessageEncrypt, sendData } from './Models/satelite';
 import { count } from 'rxjs';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ export class AppComponent {
   satelitesList: satelite[] = [];
   messagesEncrypt: any[] = [];
   distances: number[] = [];
+  popUp: boolean = false;
 
 
   constructor(private service: ProjectServiceService) {
@@ -38,9 +40,10 @@ export class AppComponent {
       this.distances[index] = distance
  
   }
-
+data: any
   //funcion para 
   saveData() {
+    this.popUp = true
     const data: sendData = {
       satelites: this.satelitesSelected,
       messages: [] ,
@@ -53,6 +56,9 @@ export class AppComponent {
       }
       data.messages[index] = messageEncrypt
     });
+    console.log(data)
+
+    this.data = data
 
     this.service.connectApiPost('MessageIntersect', data, (res: any) => {
       console.log(res)
