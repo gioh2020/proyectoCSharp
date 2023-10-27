@@ -128,3 +128,9 @@ C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\interse
 C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.pdb
 C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\intersectMessage.genruntimeconfig.cache
 C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\obj\Debug\net6.0\ref\intersectMessage.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\giova\OneDrive\Escritorio\net\proyecto\BackEnd\intersectMessage\intersectMessage\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
