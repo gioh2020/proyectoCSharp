@@ -14,7 +14,7 @@ CREATE TABLE `messagesIntersect` (
     `MessageId` INT NOT NULL AUTO_INCREMENT,
     `SateliteIdRef` INT NOT NULL,
     `Consecutive` INT NOT NULL,
-    `Distance` decimal NOT NULL,
+    `Distance` DECIMAL(12 , 2) NOT NULL,
     `Message` VARCHAR(255) NULL,
     `AuditDate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     
