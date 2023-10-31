@@ -6,14 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProjectServiceService {
   suscription: any;
+  private endpoint: string =  "http://www.gioh2020.somee.com/api/";
 
   constructor(private http: HttpClient) { }
 
   public async connectApiPost(controllerMethod: string, body: any, callback: any, showError: boolean = false) {
-    let endpoint = "https://localhost:7067/api/";
-
-    
-    this.http.post<any>(endpoint + controllerMethod, body)
+    this.http.post<any>(this.endpoint + controllerMethod, body)
       .subscribe(res => {
         callback(res);
       },
@@ -24,10 +22,7 @@ export class ProjectServiceService {
       );
   }
   public async connectApiGet(controllerMethod: string, callback: any, showError: boolean = false) {
-    let endpoint = "https://localhost:7067/api/";
-
-    
-    this.suscription = this.http.get<any>(endpoint + controllerMethod, { observe: 'response'})
+    this.suscription = this.http.get<any>(this.endpoint + controllerMethod, { observe: 'response'})
       .subscribe(res => {
         callback(res);
       },

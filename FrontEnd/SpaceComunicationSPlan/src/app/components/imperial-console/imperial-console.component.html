@@ -82,17 +82,21 @@
             <td>{{ satellite.sateliteName }}: [{{ satellite.coordinateX }},{{ satellite.coordinateY }}]</td>
           </tr>
         </table>
-        <button class="show-popUp-button" >confrimar</button>
+        <button class="show-popUp-button" (click)="sendData()" >confirmar</button>
       </div>
   
       <div class="banners">
         <div class="img-container">
           <h2>consola imperial</h2>
-          <img class="img-banner" src="../assets/banner-imperio.jpg" alt="">
+          <a href="imperialConsole">
+            <img class="img-banner" src="../../../assets/darthV.png" alt="">
+          </a>
         </div>
         <div class="img-container">
           <h2>consola rebelde</h2>
-          <img class="img-banner" src="../assets/banner-alianza.jpg" alt="">
+          <a href="rebelConsole">
+            <img class="img-banner" src="../../../assets/byoda.png" alt="">
+          </a>
         </div>
       </div>
     </div>

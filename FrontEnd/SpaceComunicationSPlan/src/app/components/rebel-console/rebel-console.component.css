@@ -7,3 +7,121 @@
     height: 100vh;
     background-color: rgb(0, 0, 0);
 }
+.satelites-info-container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+img{
+    height: 100vh;
+    width: 250px;
+}
+
+.banners{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-self: flex-end;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+.img-banner{
+    width: 200px;
+    height: 160px;
+    cursor: pointer;
+}
+h3{
+    color:  rgb(206, 206, 164);
+ }
+ h4{
+     color: rgb(39, 180, 65);
+ }
+ .format-info p{
+    color: rgb(39, 180, 65);
+    margin: 0px 0px 0px 25px;
+ }
+ input{
+     width: 100%;
+     border-radius: 4px;
+     border: solid rgb(39, 180, 65) 3px;
+     background-color: transparent;
+     color: gray;
+     font-size: 1.5rem;
+     font-family: 'Star Wars', sans-serif;
+     font-weight: bolder;
+     margin-left: 5px;
+     text-align: center;
+ }
+ textarea{
+     font-size: 1rem;
+     color: rgb(180, 205, 185);
+     background-color: transparent;
+     font-family: 'Star Wars', sans-serif;
+     padding: 5px;
+     margin: 6px 0px 10px 0px;
+     width: 100%;
+ }
+ h1{
+     color: rgb(206, 206, 164);
+     font-family: 'Star Wars', sans-serif;
+     width: 100%;
+     text-align: center;
+     
+ }
+ h2{
+     color: rgb(180, 205, 185);
+     font-family: 'Star Wars', sans-serif;
+     text-indent: 15px;
+ }
+ label{
+    color: rgb(39, 180, 65);
+    font-size: 1.5rem;
+    font-family: 'Star Wars', sans-serif;
+    margin-bottom: 3px;
+
+}
+select{
+    width: 100%;
+    border-radius: 4px;
+    border: solid rgb(39, 180, 65) 3px;
+    background-color: transparent;
+    color: gray;
+    font-size: 1.5rem;
+    font-family: 'Star Wars', sans-serif;
+    vertical-align: middle;
+    height: 36px;
+
+}
+.headers {
+    padding: 0.5rem;
+    width: 25%;
+    height: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.cells {
+    padding: 0;
+    width: 25%;
+    height: 56px;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(206, 206, 164);
+
+}

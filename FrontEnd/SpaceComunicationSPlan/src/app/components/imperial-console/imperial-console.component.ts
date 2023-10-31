@@ -33,18 +33,18 @@ export class ImperialConsoleComponent {
 
   }
 
-  distanceChange(index:number, event:any){
-      const distance: number = event.target.value
-      this.distances[index] = distance
- 
+  distanceChange(index: number, event: any) {
+    const distance: number = event.target.value
+    this.distances[index] = distance
+
   }
-data: any
+  data: any
   //funcion para 
   saveData() {
     this.popUp = true
     const data: sendData = {
       satelites: this.satelitesSelected,
-      messages: [] ,
+      messages: [],
     }
     this.satelitesSelected.forEach((satelite: satelite, index: number) => {
       const messageEncrypt: MessageEncrypt = {
@@ -56,12 +56,17 @@ data: any
     });
 
     this.data = data
+    this.sendData()
 
     // this.service.connectApiPost('MessageIntersect', data, (res: any) => {
     // })
   }
+  sendData(){
+    this.service.connectApiPost('MessageIntersect', this.data, (res: any) => {
+     })
+  }
 
-  showPopUp(){
+  showPopUp() {
     this.popUp = !this.popUp
   }
 
