@@ -180,3 +180,8 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 160px;
     cursor: pointer;
 }
+.custom-alert-container {
+    background-color: black;
+    color: rgb(39, 180, 65);
+  }
+

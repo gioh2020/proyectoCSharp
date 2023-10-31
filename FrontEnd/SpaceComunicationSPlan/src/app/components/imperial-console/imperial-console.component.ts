@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectServiceService } from 'src/app/Services/project-service.service';
 import { satelite, MessageEncrypt, sendData } from 'src/app/Models/satelite';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-imperial-console',
@@ -56,14 +57,35 @@ export class ImperialConsoleComponent {
     });
 
     this.data = data
-    this.sendData()
 
-    // this.service.connectApiPost('MessageIntersect', data, (res: any) => {
-    // })
   }
-  sendData(){
+
+  sendData() {
     this.service.connectApiPost('MessageIntersect', this.data, (res: any) => {
-     })
+      console.log(res)
+      if (res.status == '400' || res.status == '0') {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Error al enviar el mensaje!',
+          customClass: {
+            container: 'custom-alert-container'
+          },
+        })
+      }
+      else {
+        Swal.fire({
+          icon: 'success',
+          title: 'Mensaje de ayuda enviado!',
+          showConfirmButton: false,
+          timer: 1500
+        }).then(()=>{
+          window.location.reload();
+        })
+
+      }
+
+    })
   }
 
   showPopUp() {
