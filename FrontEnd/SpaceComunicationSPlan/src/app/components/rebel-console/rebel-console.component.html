@@ -1,30 +1,57 @@
 <div class="pricipal-div">
-    <img src="../assets/starsDark.jpg" alt="">
-    <div class="satelites-info-container">
-      <h1>consola ayuda imperial</h1>
-      <div class="satelites-container">
+  <img src="../assets/starsDark.jpg" alt="">
+  <div class="satelites-info-container">
+    <h1>mensajes intersectados</h1>
+    <div class="satelites-container">
 
+
+   
+        <mat-label>Filtro</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Buscar" #input>
+    
+      <div id="table">
+        <mat-table [dataSource]="dataSource" matSort matColumnResize style="overflow-x: auto; background: none; ">
+          <div matColumnDef="{{disCol}}" *ngFor="let disCol of displayedColumns" matResizable>
+            <!--  -->
+            <div *ngIf="disCol!='Actions'">
+              <th style=" text-align: center;" class="headers" mat-header-cell *matHeaderCellDef style="color:#143466;">
+                {{disCol.toUpperCase()}}</th>
+              <td style=" text-align: center;" class="cells" mat-cell *matCellDef="let element">{{element[disCol]}}</td>
+            </div>
+          </div>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+          <!-- Row shown when there is no matching data. -->
+          <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No se encontraron registros - "{{input.value}}"</td>
+          </tr>
+        </mat-table>
+        <mat-paginator [pageSizeOptions]="[5]" aria-label="Pagina"></mat-paginator>
 
       </div>
-  
-  
-      <div>
-        <label for="">Escribir Mensaje</label>
-  
-    
-  
+
+
+
       <div class="banners">
         <div class="img-container">
           <h2>consola imperial</h2>
-          <img class="img-banner" src="../assets/banner-imperio.jpg" alt="">
+          <a href="imperialConsole">
+            <img class="img-banner" src="../../../assets/darthV.png" alt="">
+          </a>
         </div>
         <div class="img-container">
           <h2>consola rebelde</h2>
-          <img class="img-banner" src="../assets/banner-alianza.jpg" alt="">
+          <a href="rebelConsole">
+            <img class="img-banner" src="../../../assets/byoda.png" alt="">
+          </a>
         </div>
       </div>
+
     </div>
-    <img src="../assets/starsDark.jpg" alt="">
-  
-  
+
+
   </div>
+  <img src="../assets/starsDark.jpg" alt="">
+</div>

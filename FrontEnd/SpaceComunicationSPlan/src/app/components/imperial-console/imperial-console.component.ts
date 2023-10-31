@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectServiceService } from 'src/app/Services/project-service.service';
 import { satelite, MessageEncrypt, sendData } from 'src/app/Models/satelite';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-imperial-console',
@@ -33,18 +34,18 @@ export class ImperialConsoleComponent {
 
   }
 
-  distanceChange(index:number, event:any){
-      const distance: number = event.target.value
-      this.distances[index] = distance
- 
+  distanceChange(index: number, event: any) {
+    const distance: number = event.target.value
+    this.distances[index] = distance
+
   }
-data: any
+  data: any
   //funcion para 
   saveData() {
     this.popUp = true
     const data: sendData = {
       satelites: this.satelitesSelected,
-      messages: [] ,
+      messages: [],
     }
     this.satelitesSelected.forEach((satelite: satelite, index: number) => {
       const messageEncrypt: MessageEncrypt = {
@@ -57,11 +58,37 @@ data: any
 
     this.data = data
 
-    // this.service.connectApiPost('MessageIntersect', data, (res: any) => {
-    // })
   }
 
-  showPopUp(){
+  sendData() {
+    this.service.connectApiPost('MessageIntersect', this.data, (res: any) => {
+      console.log(res)
+      if (res.status == '400' || res.status == '0') {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Error al enviar el mensaje!',
+          customClass: {
+            container: 'custom-alert-container'
+          },
+        })
+      }
+      else {
+        Swal.fire({
+          icon: 'success',
+          title: 'Mensaje de ayuda enviado!',
+          showConfirmButton: false,
+          timer: 1500
+        }).then(()=>{
+          window.location.reload();
+        })
+
+      }
+
+    })
+  }
+
+  showPopUp() {
     this.popUp = !this.popUp
   }
 

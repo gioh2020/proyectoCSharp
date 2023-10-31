@@ -166,12 +166,22 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: space-between;
     margin-top: auto;
 }
+.banners h2{
+    text-align: center;
+}
 .img-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 45%;
 }
 .img-banner{
-    width: 100%;
-    height: 60px;
+    width: 180px;
+    height: 160px;
+    cursor: pointer;
 }
+.custom-alert-container {
+    background-color: black;
+    color: rgb(39, 180, 65);
+  }
+

@@ -243,7 +243,7 @@ namespace intersectMessage.Data.Sevices
         public async Task<IEnumerable<DecryptedMessage>> GetAllMessagesIntersected()
         {
             var db = dbConnetion();
-            var sql = @"SELECT Consecutive, CoordinateX, CoordinateY, Message
+            var sql = @"SELECT Consecutive, CoordinateX, CoordinateY, Message, AuditDate, DecryptedMessageId
                         FROM decryptedMessage";
             return await db.QueryAsync<DecryptedMessage>(sql, new { });
         }
