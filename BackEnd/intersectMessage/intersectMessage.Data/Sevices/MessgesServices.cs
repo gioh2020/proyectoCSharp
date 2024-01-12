@@ -5,14 +5,17 @@ using intersectMessage.Data.Models;
 using intersectMessage.Model;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI.Common;
+using Org.BouncyCastle.Asn1.Ocsp;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Dynamic;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace intersectMessage.Data.Sevices
 {
@@ -138,18 +141,19 @@ namespace intersectMessage.Data.Sevices
             messageAndCoordinateIntersected(consecutive, coordinateX, coordinateY, messageIntersected);
 
 
-            return new { messageIntersected };
+            return new { };
         }
 
-        public async Task<bool> messageAndCoordinateIntersected(int consecutive, float coordinateX, float coordinateY, string message)
+   
+
+        public async void  messageAndCoordinateIntersected(int consecutive, float coordinateX, float coordinateY, string message)
         {
             var db = dbConnetion();
             var sql = @"INSERT INTO decryptedMessage(consecutive, coordinateX, coordinateY , Message) 
                         VALUES(@Consecutive, @CoordinateX, @CoordinateY, @Message)";
             await db.ExecuteAsync(sql, new { consecutive, coordinateX, coordinateY, message });
 
-
-            return true;
+          
         }
 
 
