@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProjectServiceService {
   suscription: any;
-  private endpoint: string =  "http://galaxymessage.somee.com/api/";
+  private endpoint: string =  "http://galaxymessages.us-east-2.elasticbeanstalk.com/api/";
 
   constructor(private http: HttpClient) { }
 
