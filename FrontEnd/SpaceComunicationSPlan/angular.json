@@ -64,7 +64,8 @@
               "browserTarget": "SpaceComunicationSPlan:build:production"
             },
             "development": {
-              "browserTarget": "SpaceComunicationSPlan:build:development"
+              "browserTarget": "SpaceComunicationSPlan:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
