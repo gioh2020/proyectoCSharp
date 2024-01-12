@@ -12,7 +12,7 @@ export class ProjectServiceService {
 
   public async connectApiPost(controllerMethod: string, body: any, callback: any, showError: boolean = false) {
     
-    this.http.post<any>(this.endpoint + controllerMethod, body)
+    this.http.post<any>(controllerMethod, body)
       .subscribe(res => {
         callback(res);
       },
@@ -24,7 +24,7 @@ export class ProjectServiceService {
   }
   public async connectApiGet(controllerMethod: string, callback: any, showError: boolean = false) {
     console.log(this.endpoint +  controllerMethod,)
-    this.suscription = this.http.get<any>(this.endpoint +  controllerMethod, { observe: 'response'})
+    this.suscription = this.http.get<any>(controllerMethod, { observe: 'response'})
       .subscribe(res => {
         callback(res);
         console.log(res)
