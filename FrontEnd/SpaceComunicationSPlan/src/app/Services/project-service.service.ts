@@ -14,7 +14,6 @@ export class ProjectServiceService {
     this.http.post<any>(controllerMethod, body)
       .subscribe(res => {
         callback(res);
-        console.log(res)
       },
         err => {
           callback(err);
@@ -26,6 +25,7 @@ export class ProjectServiceService {
     this.suscription = this.http.get<any>(controllerMethod, { observe: 'response'})
       .subscribe(res => {
         callback(res);
+        console.log(res)
       },
         err => {
           callback(err);
