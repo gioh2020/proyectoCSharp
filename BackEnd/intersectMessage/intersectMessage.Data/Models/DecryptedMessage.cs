@@ -13,6 +13,7 @@ namespace intersectMessage.Data.Models
         public int CoordinateX { get; set; }
         public float CoordinateY { get; set; }
         public float? consecutive { get; set; }
+        public DateTime? AuditDate { get; set; }
 
     }
 }
