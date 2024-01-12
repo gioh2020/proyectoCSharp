@@ -1,8 +1,0 @@
-{
-    "/MessageIntersect/*": {
-        "target": "http://galaxymessage.somee.com/api/",
-        "secure": false,
-        "logLevel":"debug",
-        "changeOrigin": true
-    }
-}
