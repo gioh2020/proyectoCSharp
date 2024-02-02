@@ -21,26 +21,24 @@ builder.Services.AddScoped<IIntersectMessage, MessagesIntersetServices>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("policity", app =>
+    options.AddPolicy("policity", builder =>
     {
-        app.AllowAnyHeader();
-        app.AllowAnyOrigin();
-        app.AllowAnyMethod();
-
+        builder.WithOrigins("https://d2ly8xc1lt88wm.cloudfront.net", "https://proyecto-c-sharp.vercel.app")
+               .AllowAnyHeader()
+               .AllowAnyMethod();
     });
-
 });
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+
 
 app.UseCors("policity");
 

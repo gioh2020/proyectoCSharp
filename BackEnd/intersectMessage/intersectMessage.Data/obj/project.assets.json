@@ -1833,19 +1833,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\giova\\.nuget\\packages\\": {}
+    "C:\\Users\\Giovanny\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\giova\\OneDrive\\Escritorio\\net\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Data\\intersectMessage.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Giovanny\\OneDrive\\Escritorio\\proyectoCSharp\\BackEnd\\intersectMessage\\intersectMessage.Data\\intersectMessage.Data.csproj",
       "projectName": "intersectMessage.Data",
-      "projectPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\net\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Data\\intersectMessage.Data.csproj",
-      "packagesPath": "C:\\Users\\giova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\net\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Data\\obj\\",
+      "projectPath": "C:\\Users\\Giovanny\\OneDrive\\Escritorio\\proyectoCSharp\\BackEnd\\intersectMessage\\intersectMessage.Data\\intersectMessage.Data.csproj",
+      "packagesPath": "C:\\Users\\Giovanny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Giovanny\\OneDrive\\Escritorio\\proyectoCSharp\\BackEnd\\intersectMessage\\intersectMessage.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\giova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Giovanny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1859,8 +1859,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\giova\\OneDrive\\Escritorio\\net\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj": {
-              "projectPath": "C:\\Users\\giova\\OneDrive\\Escritorio\\net\\proyecto\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj"
+            "C:\\Users\\Giovanny\\OneDrive\\Escritorio\\proyectoCSharp\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj": {
+              "projectPath": "C:\\Users\\Giovanny\\OneDrive\\Escritorio\\proyectoCSharp\\BackEnd\\intersectMessage\\intersectMessage.Model\\intersectMessage.Model.csproj"
             }
           }
         }
@@ -1900,7 +1900,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
