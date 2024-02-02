@@ -103,12 +103,13 @@ select{
     padding: 0.5rem;
     width: 25%;
     height: 15px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
     padding-top: 0px;
     padding-bottom: 0px;
+    color: rgb(192, 112, 81);
 
 }
 
@@ -116,12 +117,19 @@ select{
     padding: 0;
     width: 25%;
     height: 56px;
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     vertical-align: middle;
     padding-top: 0px;
     padding-bottom: 0px;
     color: rgb(206, 206, 164);
+
+}
+mat-label{
+    color: rgb(192, 112, 81);
+    font-size: 20px;
+    font-family: 'Star Wars', sans-serif;
+    margin: 0px 10px 0px 10px;
 
 }

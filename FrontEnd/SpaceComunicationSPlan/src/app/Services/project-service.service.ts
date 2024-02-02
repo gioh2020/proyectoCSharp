@@ -23,10 +23,8 @@ export class ProjectServiceService {
       );
   }
   public async connectApiGet(controllerMethod: string, callback: any, showError: boolean = false) {
-
-    this.suscription = this.http.get<any>(this.endpoint +controllerMethod, { observe: 'response'})
-    .subscribe(res => {
-        console.log(res)
+    this.suscription = this.http.get<any>(this.endpoint + controllerMethod, { observe: 'response'})
+      .subscribe(res => {
         callback(res);
       },
         err => {

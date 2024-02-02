@@ -23,7 +23,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("policity", builder =>
     {
-        builder.WithOrigins("https://d2ly8xc1lt88wm.cloudfront.net", "https://proyecto-c-sharp.vercel.app")
+        builder.WithOrigins("https://d2ly8xc1lt88wm.cloudfront.net", "https://proyecto-c-sharp.vercel.app", "http://localhost:4200")
                .AllowAnyHeader()
                .AllowAnyMethod();
     });
@@ -32,7 +32,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsProduction())
+if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
