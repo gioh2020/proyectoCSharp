@@ -17,7 +17,7 @@ namespace intersectMessage.Controllers
             _messageIntersect = msgIntersect;
         }
 
-        [HttpGet]
+        [HttpGet("getAllMesagges")]
         public async Task<IActionResult> GetAllMessages()
         {
             return Ok(await _messageIntersect.GetAllMessages());

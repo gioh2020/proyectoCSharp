@@ -62,7 +62,6 @@ export class ImperialConsoleComponent {
 
   sendData() {
     this.service.connectApiPost('MessageIntersect', this.data, (res: any) => {
-      console.log(res)
       if (res.status == '400' || res.status == '0') {
         Swal.fire({
           icon: 'error',
