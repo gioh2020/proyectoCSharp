@@ -32,7 +32,7 @@ export class RebelConsoleComponent {
       var resp = res.body.map((obj:any)=>{
 
         let{auditDate, consecutive, coordinateX, coordinateY, message } = obj;
-        return { consecutivo: consecutive, mensaje: message, cordenada_X: coordinateX, cordenada_Y: coordinateY, fecha: auditDate }
+        return { consecutivo: consecutive, mensaje: message, coordenada_X: coordinateX, coordenada_Y: coordinateY, fecha: auditDate }
 
 
       })
