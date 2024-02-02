@@ -5,16 +5,16 @@
     <div class="satelites-container">
 
 
-   
-        <mat-label>Filtro</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Buscar" #input>
-    
+
+      <mat-label>Filtro</mat-label>
+      <input  (keyup)="applyFilter($event)"  #input>
+
       <div id="table">
         <mat-table [dataSource]="dataSource" matSort matColumnResize style="overflow-x: auto; background: none; ">
           <div matColumnDef="{{disCol}}" *ngFor="let disCol of displayedColumns" matResizable>
             <!--  -->
             <div *ngIf="disCol!='Actions'">
-              <th style=" text-align: center;" class="headers" mat-header-cell *matHeaderCellDef style="color:#143466;">
+              <th style=" text-align: center;" class="headers" mat-header-cell *matHeaderCellDef >
                 {{disCol.toUpperCase()}}</th>
               <td style=" text-align: center;" class="cells" mat-cell *matCellDef="let element">{{element[disCol]}}</td>
             </div>
