@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProjectServiceService {
   suscription: any;
-  private endpoint: string =  "https://www.galaxymessage.somee.com/api/";
+  private endpoint: string =  "https://localhost:7067/api/";
 
   constructor(private http: HttpClient) { }
 
