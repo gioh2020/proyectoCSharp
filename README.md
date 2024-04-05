@@ -1,8 +1,19 @@
 # Plan de comunicaciones base espacial.
 
-El objetivo de estre proyecto descubrir y desencriptar 
+### Pre-requisitos 📋
+* Angular 16
+* .net 6
+* Visual Studio code
+* Visual Studio
+* Clonar la rama "local", en esta se ha configurado el entorno de desarollo local.
 
-### Introducion al problema
+### Instalación 🔧
+
+Abrir un consola de comandos en la ruta de la carpeta FrontEnd, ejecutar el comando **npm install**
+
+En Visual Studio ejecutar el archivo **intersectMessage.sln**
+
+### Introducion al problema 🚀
 
 Tenemos una nave del imperio que pretende enviar un mensaje a tres satélites, encriptado en el siguiente formato:
 #### img 1
