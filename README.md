@@ -6,8 +6,9 @@ El objetivo de estre proyecto descubrir y desencriptar
 
 Tenemos una nave del imperio que pretende enviar un mensaje a tres satélites, encriptado en el siguiente formato:
 #### img 1
-![formato mensaje](img/one.jpg)
-Puede notar que cada satélite recibe el mensaje de manera diferente,  y se guarda de la misma forma en base de datos.
+![formato mensaje](./img/one.jpg)
+
+  Puede notar que cada satélite recibe el mensaje de manera diferente,  y se guarda de la misma forma en base de datos.
 
 #### img 2 
 ![alt text](img/dbMsgByS.jpg)
