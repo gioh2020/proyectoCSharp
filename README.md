@@ -3,15 +3,25 @@
 ### Pre-requisitos 📋
 * Angular 16
 * .net 6
+* Mysql WorkBench
 * Visual Studio code
 * Visual Studio
 * Clonar la rama "local", en esta se ha configurado el entorno de desarollo local.
 
 ### Instalación 🔧
 
-Abrir un consola de comandos en la ruta de la carpeta FrontEnd, ejecutar el comando **npm install**
+Abrir un consola de comandos en la ruta de la proyectoCSharp/FrontEnd/SpaceComunicationSPlan, ejecutar el comando **npm install**, luego ejecutar el comando **ng serve -o** ó **ng s -o**
 
-En Visual Studio ejecutar el archivo **intersectMessage.sln**
+En Visual Studio ejecutar el archivo **intersectMessage.sln** proyectoCSharp/backEnd/intersectMesaage/intersectMessage.sln
+
+Configuracion Mysql WorkBench:
+
+* Hostname: localhost
+* Username: root
+* Port: 3306
+* Password: admin
+
+En Mysql WorkBench ejecutar el archivo **ScriptDB.sql** proyectoCSharp/DataBase/ScriptDB.sql
 
 ### Introducion al problema 🚀
 
